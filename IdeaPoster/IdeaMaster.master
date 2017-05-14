@@ -1,0 +1,349 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="IdeaMaster.master.cs" Inherits="IdeaMaster" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<%--<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+</body>
+</html>--%>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Home</title>
+    <meta charset="utf-8">
+    <meta name="format-detection" content="telephone=no"/>
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/grid.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/camera.css"/>
+    <link rel="stylesheet" href="css/owl.carousel.css"/>
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery-migrate-1.2.1.js"></script>
+    <script src="js/jquery.equalheights.js"></script>
+    <!--[if (gt IE 9)|!(IE)]><!-->
+    <script src="js/jquery.mobile.customized.min.js"></script>
+    <!--<![endif]-->
+    <script src="js/camera.js"></script>
+    <script src="js/owl.carousel.js"></script>
+    <!--[if lt IE 9]>
+    <div style=' clear: both; text-align:center; position: relative;'>
+        <a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode">
+            <img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0"
+                 height="42" width="820"
+                 alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today."/>
+        </a>
+    </div>
+    <script src="js/html5shiv.js"></script>
+    <link rel="stylesheet" type="text/css" media="screen" href="css/ie.css">
+    <![endif]-->
+</head>
+<body>
+<form id="form1" runat="server">
+<div class="page">
+<!--========================================================
+                          HEADER
+=========================================================-->
+<header id="header">
+    <div id="stuck_container">
+        <div class="container">
+            <div class="row">
+                <div class="grid_12"<%-- style="background-color: #5270FF"--%>>
+                    <div class="brand put-left">
+                        <h1>
+                            <a href="home1.aspx">
+                                <img src="images/logo.png" alt="Logo"/>
+                            </a>
+                        </h1>
+                    </div>
+                    <%--<nav class="nav put-right">--%>
+                        <ul class="sf-menu">
+                           <%--<li>
+                                <asp:LinkButton ID="home" Text="Home" runat="server" CausesValidation="False" 
+                                    onclick="home_Click"></asp:LinkButton>--%>
+                           
+                            <li></li>
+                            <li>
+                                <asp:LinkButton ID="Ideapost" Text="Post Your Idea" runat="server" CausesValidation="False" 
+                                    onclick="Ideapost_Click"></asp:LinkButton>
+
+                           <li>
+                                <asp:LinkButton ID="Investor" Text="Investors" runat="server" CausesValidation="False" 
+                                    onclick="Investor_Click"></asp:LinkButton>
+
+                          <%--  <li>
+                                <a href="about.html">About</a>
+                                <ul>
+                                    <li><a href="#">Lorem ipsum</a></li>
+                                    <li><a href="#">Dolor sit amet</a>
+                                    <li><a href="#">Ctetur adipisicing</a>
+                                    <li><a href="#">Elit sed do</a>
+                                        <ul>
+                                            <li><a href="#">Iusmod tempor</a></li>
+                                            <li><a href="#">Incididunt ut labore</a></li>
+                                            <li><a href="#">Et dolore magna</a></li>
+                                            <li><a href="#">Aliqua Ut enim</a></li>
+                                            <li><a href="#">Minim veniam</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>--%>
+
+                            <li>
+                          <%--<asp:LinkButton ID="log" Text="Login" runat="server" CausesValidation="False" 
+                                    onclick="log_Click"></asp:LinkButton>--%>
+                          <%--  <li><a href="services.html">Services</a></li>--%>
+                           <%-- <li><a href="blog.html">Blog</a></li>--%>
+
+
+                           <li>
+                                <asp:LinkButton ID="contact" Text="Contact Us" runat="server" CausesValidation="False" 
+                                    onclick="contact_Click"></asp:LinkButton>
+                        </ul>
+                 
+                     <div class="put-right pad-top-10 pad-right-10">
+                        <h1>
+
+                        <asp:Button ID="Button1" runat="server" CausesValidation="False" CssClass="btn_3"
+                                onclick="Button1_Click" Text="Sign Out"></asp:Button>
+                                <asp:ImageButton ID="login_img" runat="server" 
+                                ImageUrl="~/IdeaPoster/images/log in.png" onclick="login_img_Click"></asp:ImageButton>
+                            <%--<a href="~/Login.aspx">
+                                <img id="login_img" src="images/log in.png"/>--%>
+                            </a>
+                        </h1>
+                    </div>
+
+
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<!--========================================================
+                          CONTENT
+=========================================================-->
+<section id="content"><div class="ic">Website Made By Anant & Parth</div>
+<%--<div class="camera-wrapper">
+    <div id="camera" class="camera-wrap">
+        <div data-src="images/index_slide01.jpg">
+            <div class="fadeIn camera_caption">
+                <h2 class="text_1 color_1" style="font-size: 15mm" align="left">WELCOME TO FLARE BROADCAST</h2>
+              
+            </div>
+        </div>
+        <div data-src="images/index_slide02.jpg">
+            <div class="fadeIn camera_caption">
+                <h2 class="text_1 color_1">Investing In Tommorrow's Leader...</h2>
+                
+            </div>
+        </div>
+        <div data-src="images/index_slide03.jpg">
+            <div class="fadeIn camera_caption">
+                <h2 class="text_1 color_1">Solution That You Need!</h2>
+                
+            </div>
+        </div>
+    </div>
+</div>--%>
+
+
+
+
+
+ 
+    <div class="row wrap_1 wrap_5">
+    
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+
+
+        
+        </asp:ContentPlaceHolder>
+    </div>
+ 
+
+
+
+
+
+ <div class="container">
+    <div class="row">
+        <div class="grid_4">
+            <div class="box_1">
+                <div class="icon_1"></div>
+                <h3 class="text_2 color_2 maxheight1"><a href="#">Budget Planning</a></h3>
+                <p class="text_3 color_2 maxheight">
+                    Budget Planning Is Most Important Step For Start Up
+                </p>
+                <a class="btn_2" href="#">read more</a></div>
+        </div>
+        <div class="grid_4">
+            <div class="box_1">
+                <div class="icon_2"></div>
+                <h3 class="text_2 color_2 maxheight1"><a href="#">Marketing Research</a></h3>
+                <p class="text_3 color_2 maxheight">
+                    You Can Analyze Various Type Of Business Market With Our User's Experience
+                </p>
+                <a class="btn_2" href="#">read more</a></div>
+        </div>
+        <div class="grid_4">
+            <div class="box_1">
+                <div class="icon_3"></div>
+                <h3 class="text_2 color_2 maxheight1"><a href="#">User Benefits</a></h3>
+                <p class="text_3 color_2 maxheight">
+                    Rating, Reviews And Experience Of Other Users.
+                </p>
+                <a class="btn_2" href="#">read more</a></div>
+        </div>
+        <div class="grid_4">
+            <div class="box_1">
+                <div class="icon_4"></div>
+                <h3 class="text_2 color_2 maxheight1"><a href="#">Why Flare Broadcast??</a></h3>
+                <p class="text_3 color_2 maxheight">
+                    You Can Make Your Post Premium And Get More Responses.
+                </p>
+                <a class="btn_2" href="#">read more</a></div>
+        </div>
+    </div>
+</div>
+ 
+ <div class="container">
+    <div class="row wrap_1">
+        <div class="grid_6 pad-left-50">
+            <div class="wrap_6">
+                <div class="box_2 maxheight2">
+                    <div class="put-left"><img src="images/index_img01.png" alt="Image 1"/></div>
+                    <div class="caption">
+                        <h3 class="text_2 color_2">
+                            Save Your Time <br/>
+                            with Us
+                        </h3>
+                        <p class="text_3">
+                           You Don't Need To Wander In Various Market Areas To Start-up New Innovative Business And To Find Investors For It.
+                        </p>
+                        <a href="#" class="btn_2">read more</a>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+</div>
+<div class="grid_6 pad-left-100">
+                <div class="wrap_6">
+                    <div class="box_2 maxheight2">
+                        <div class="put-left"><img src="images/index_img02.png" alt="Image 2"/></div>
+                        <div class="caption">
+                            <h3 class="text_2 color_2">
+                                The Highest <br/>
+                                Quality Services
+                            </h3>
+                            <p class="text_3">
+                                You Can Contact To Our Employee 24*7.
+                            </p>
+                            <a href="#" class="btn_2">read more</a>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+           
+        </div>
+    </div>
+</div>
+
+
+
+
+<div class="bg_1 wrap_13 wrap_5">
+    <div class="container">
+        <div class="row">
+            <div class="grid_12">
+                <h2 class="header_1 wrap_8 color_3">
+                    What Clients Say
+                </h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="grid_12">
+                <div id="owl">
+                    <div class="item">
+                        <p class="text_3">
+                            Vivamus at magna non nunc tristique rhoncus. Aliquam nibh ante, egestas id dictum a,
+                            commodo luctus libero. Praesent faucibus malesuada faucibus. Donec laoreet metus id
+                            laoreet malesuada. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
+                            consectetur orci sed nulla facilisis consequat. Curabitur vel lorem sit amet nulla
+                            ullamcorper fermentum. In vitae varius augue, eu consectetur ligula. Etiam dui eros,
+                            <br/>
+                            laoreet sit amet est vel, commodo venenatis eros. Fusce adipiscing quam id risus
+                            sagittis, non consequat lacus interdum.
+                        </p>
+                    </div>
+                    <div class="item">
+                        <p class="text_3">
+                            Vivamus at magna non nunc tristique rhoncus. Aliquam nibh ante, egestas id dictum a,
+                            commodo luctus libero. Praesent faucibus malesuada faucibus. Donec laoreet metus id
+                            laoreet malesuada. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
+                            consectetur orci sed nulla facilisis consequat. Curabitur vel lorem sit amet nulla
+                            ullamcorper fermentum. In vitae varius augue, eu consectetur ligula. Etiam dui eros,
+                            <br/>
+                            laoreet sit amet est vel, commodo venenatis eros. Fusce adipiscing quam id risus
+                            sagittis, non consequat lacus interdum.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="row wrap_9 wrap_4 wrap_10">
+        <div class="grid_12">
+            <div class="header_1 wrap_3 color_3">
+                Get in Touch
+            </div>
+            <div class="box_3">
+                <ul class="list_1">
+                    <li><a class="fa fa-twitter" href="#"></a></li>
+                    <li><a class="fa fa-facebook" href="#"></a></li>
+                    <li><a class="fa fa-google-plus" href="#"></a></li>
+                    <li><a class="fa fa-pinterest" href="#"></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+</section>
+</div>
+<!--========================================================
+                          FOOTER
+=========================================================-->
+<footer id="footer" class="color_9">
+    <div class="container">
+        <div class="row">
+            <div class="grid_12">
+                <p class="info text_4 color_4" style="font-weight: bold">
+                    © <span id="copyright-year"></span> | <a href="#">Privacy Policy</a> <br/>
+                    Website designed by ANANT & PARTH<%--<a href="http://www.templatemonster.com/" rel="nofollow">TemplateMonster.com</a>--%>
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="js/script.js"></script>
+   </form>
+</body>
+</html>
